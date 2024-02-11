@@ -1,0 +1,32 @@
+{
+  "name": "@headless-inputs/react",
+  "private": true,
+  "version": "0.0.0",
+  "exports": {
+    "./*": {
+      "import": "./dist/*.js",
+      "require": "./dist/*.js"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "lit"
+  ],
+  "author": "neoki",
+  "dependencies": {
+    "@headless-inputs/web-components": "workspace:*",
+    "@lit/react": "^1.0.3",
+    "lit": "^3.1.2",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "typescript": "^5.3.3"
+  }
+}
